@@ -1,0 +1,7 @@
+<% @posts.each do |post| %>
+	<h1><%= post.title %></h1>
+	<div>
+		<p><%= truncate(post.body, :length => 250) %></p>
+	</div>
+	<%= link_to "Read Post", post %><br>
+<% end %>

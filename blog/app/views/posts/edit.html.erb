@@ -1,0 +1,8 @@
+<h1>Edit Post</h1>
+<% @post.errors.full_messages.each do |message| %>
+
+<%= message %><br>
+
+<%end%>
+<hr>
+<%= render 'form' %>
